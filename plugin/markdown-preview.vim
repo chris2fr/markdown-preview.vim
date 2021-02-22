@@ -5,7 +5,7 @@
 " mail: mike@mikecoder.cn
 """""""""""""""""""""""
 
-if !(has('python') || has('python3') || has('python/dyn') || has('python3/dyn')))
+if !(has('python') || has('python3') || has('python/dyn') || has('python3/dyn'))
     echo 'Error: Required vim compile with +python or +python3'
     finish
 endif
