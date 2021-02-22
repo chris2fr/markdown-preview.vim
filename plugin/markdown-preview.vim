@@ -5,17 +5,17 @@
 " mail: mike@mikecoder.cn
 """""""""""""""""""""""
 
-if !(has('python') || has('python3'))
+if !(has('python') || has('python3') || has('python/dyn') || has('python3/dyn')))
     echo 'Error: Required vim compile with +python or +python3'
     finish
 endif
 
-if has('python')
+if (has('python') || has('python/dyn'))
     let g:isPython3 = 0
 endif
 
 " we are prefer to use python3
-if has('python3')
+if (has('python3') || has('python3/dyn'))
     let g:isPython3 = 1
 endif
 
